@@ -66,7 +66,7 @@ exports.registerMigrator = function (hexo) {
         };
 
         if (args.alias) {
-          newPost.alias = url.parse(item.link).pathname;
+          newPost.alias = url.parse(item.link).pathname + "/";
         }
 
         posts.push(newPost);
